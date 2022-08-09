@@ -1,0 +1,271 @@
+header{
+    font-family:Shrikhand ;
+    text-align: center;
+    box-shadow:0 0 8px rgb(0 0 0 /25%) ;
+    padding: 5px;
+    position: relative;
+}
+body{
+    font-family: Roboto;
+}
+/*Localisation */
+.local{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #eaeaea;
+text-align: center;
+padding: 8px; 
+gap: 16px;
+}
+.local i{
+    font-size: 24px;
+}
+/*Explore*/
+.explore{
+    text-align: center;
+    background-color: #f6f6f6;
+    
+}
+
+
+.explore button{
+    color: white;
+    background-image:linear-gradient(to top,rgb(147,86,220,0.9 ),rgb(255,121,218,0.9) ) ;
+    border: none;
+    border-radius:36px;
+    padding: 16px 24px;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow:1px 1px 8px rgb(0 0 0 /50%) ;
+}
+.explore button:hover{
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+
+/* fonctionmment */
+ol {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+
+}
+
+li{
+    
+    margin: 16px;
+    position: relative;
+    white-space: nowrap; 
+}
+.liste{
+    color: white;
+    background-color:#9356DC ;
+    border-radius: 50%;
+    position: absolute;
+    width:24px;
+    height: 21px;
+    text-align: center;
+    left:-10px;
+    padding-top: 2px;
+}
+
+ol li{
+    
+    background-color: #f6f6f6;
+    border-radius: 16px;
+    box-shadow:0 0 8px rgb(0 0 0 /25%) ;
+    padding: 24px 32px;
+}
+ol li:hover{
+    transform: scale(0 1.5);
+
+}
+ol li i {
+    margin-right: 16px ;
+}
+ol:hover > li i{
+    color: #9356dc;
+
+}
+ol li:hover{
+    background-color:#f3ecfb ;
+}  
+
+/*Restaaurant */
+main{
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    
+    margin: 4px;
+
+    
+}
+main h2{
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 4px;
+}
+
+img {
+    width: 100%;
+    height: 176px ;
+    background-color: white;
+    object-fit: cover;
+    padding: 0px;
+    border-radius: 15px 15px 0 0;
+    
+}
+main article a {
+    text-decoration: none;
+    color: black;
+    align-content: space-between;
+}
+.new{
+    position: relative;
+
+}
+.new::after{
+content: "Nouveau";
+position: absolute;
+height: 32px;
+width: 80px;
+background-color: #99E2D0;
+color:  #3a9981;
+display: grid;
+place-items:center;
+right: 16px;
+top: 16px;
+}
+.card{
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+    width: 450px;
+    height: 260px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+h3{
+    padding-left: 8px;
+}
+p{
+    padding-left: 8px;
+    padding-bottom: 2px;
+}
+.container{
+    padding-left: 2px;
+    gap: 16px;
+    position: relative;
+}
+.fa-heart {
+float:inline-end;
+padding-left: 80px;
+font-size: 32px;
+position: absolute;
+top:72%;
+right: 32px;
+
+background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0));
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+animation-name: heart;
+animation-duration: 1s;
+
+}
+.fa-regular{
+
+    background: -webkit-linear-gradient(rgba(0,0,0,0.9 ),rgba(0,0,0,0.9));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.fa-heart:hover
+{
+    cursor: pointer;
+    background: -webkit-linear-gradient(rgba(147,86,220,0.9 ),rgba(255,121,218,0.9));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  @keyframes heart{
+ 0%{background-color: white;}
+30% {background-color: rgb(84, 52, 124)};
+    100% {background-color: rgba(255,121,218);}
+}
+.fa-regular:hover{
+    cursor: pointer;
+    background: -webkit-linear-gradient(rgba(0,0,0,0 ),rgba(0,0,0,0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.2;
+    animation-name: heart;
+animation-duration: 1s;
+}
+/*
+.container i:hover{
+    cursor: pointer;
+   background-image:linear-gradient(to top,rgb(147,86,220,0.9 ),rgb(255,121,218,0.9) ) ;
+  background-clip: text;
+  color: transparent;
+  
+}*/
+
+ /***** Footer ******/
+footer{
+    background-color: rgb(47, 47, 47);
+    text-align: center;
+    color: white;
+
+}
+footer h2 {
+    font-family:Shrikhand ;
+    font-size: 20px;
+    gap: 16px;
+    
+}
+footer ul li {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 700px)
+ {
+    ol
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 23px;
+    }
+
+    .explore button{
+        font-size: 15px;
+        width: 245px;
+
+    }
+    .card{
+        width: 400px;
+    }
+
+    footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    }
+    footer ul li{
+        text-align: start;
+    }
+}
