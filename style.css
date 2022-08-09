@@ -8,6 +8,40 @@ header{
 body{
     font-family: Roboto;
 }
+/* Loader*/
+.loader {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color: #f3f3f3;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.8;
+    animation: disappear 1s 1s forwards;
+    
+  }
+  .spiner {
+    
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border-top: 16px solid #9356DC;
+    border-bottom: 16px solid #99E2D0;
+    -webkit-animation: spin 2s linear ;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  @keyframes disappear {
+    to{
+        transform: scale(0);
+    }
+    
+  }
 /*Localisation */
 .local{
 display: flex;
@@ -196,8 +230,7 @@ animation-duration: 1s;
     -webkit-text-fill-color: transparent;
 }
   @keyframes heart{
- 0%{background-color: white;}
-30% {background-color: rgb(84, 52, 124)};
+0% {background-color: rgb(84, 52, 124)};
     100% {background-color: rgba(255,121,218);}
 }
 .fa-regular:hover{
@@ -206,24 +239,18 @@ animation-duration: 1s;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 0.2;
+    opacity: 1;
+    transform: translateY(-50%) scale(1.2);
     animation-name: heart;
-animation-duration: 1s;
+    animation-duration: 5s;
 }
-/*
-.container i:hover{
-    cursor: pointer;
-   background-image:linear-gradient(to top,rgb(147,86,220,0.9 ),rgb(255,121,218,0.9) ) ;
-  background-clip: text;
-  color: transparent;
-  
-}*/
 
  /***** Footer ******/
 footer{
     background-color: rgb(47, 47, 47);
     text-align: center;
     color: white;
+    padding: 0 8px;
 
 }
 footer h2 {
@@ -248,6 +275,7 @@ footer a {
         display: flex;
         flex-direction: column;
         padding: 23px;
+        font-size: 14px;
     }
 
     .explore button{
