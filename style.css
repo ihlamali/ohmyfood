@@ -207,7 +207,7 @@ background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0));
 background-clip: text;
 -webkit-text-fill-color: transparent;
 animation-name: heart;
-animation-duration: 1s;
+animation-duration: 2s;
 
 }
 .fa-regular{
@@ -225,10 +225,16 @@ animation-duration: 1s;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    opacity: 1;
+    animation-name: heart;
+    animation-duration: 10s;
 }
 @keyframes heart{
-from {background-color: rgb(84, 52, 124);}
-    to {background-color: rgba(255,121,218);}
+from {background-color: rgb(84, 52, 124);
+        animation-delay: 1s;                                    }
+    to {background-color: rgba(255,121,218);
+            animation-delay: 5s;}
+
 }
 .fa-regular:hover{
     cursor: pointer;
@@ -236,10 +242,7 @@ from {background-color: rgb(84, 52, 124);}
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 1;
-    transform: translateY(-50%) scale(1.2);
-    animation-name: heart;
-    animation-duration: 10s;
+   
 }
 
  /***** Footer ******/
