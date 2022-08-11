@@ -127,8 +127,9 @@ ol li:hover{
 }  
 
 /*Restaurant */
+
 main{
-    background-color: #f6f6f6;
+    background-color:#f7f7f7;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -280,6 +281,10 @@ footer a {
         width: 245px;
 
     }
+    main{
+        margin: 0px;
+        margin-bottom: 33px;
+    }
     .card{
         width: 400px;
     }
@@ -292,5 +297,6 @@ footer a {
     }
     footer ul li{
         text-align: start;
+        margin-left: -20px;
     }
 }
