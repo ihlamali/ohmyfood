@@ -126,7 +126,7 @@ ol li:hover{
     background-color:#f3ecfb ;
 }  
 
-/*Restaaurant */
+/*Restaurant */
 main{
     background-color: #f6f6f6;
     display: flex;
@@ -134,10 +134,7 @@ main{
     flex-wrap: wrap;
     gap: 16px;
     justify-content: center;
-    
     margin: 4px;
-
-    
 }
 main h2{
     width: 100%;
@@ -228,9 +225,9 @@ animation-duration: 1s;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-  @keyframes heart{
-0% {background-color: rgb(84, 52, 124)};
-    100% {background-color: rgba(255,121,218);}
+@keyframes heart{
+from {background-color: rgb(84, 52, 124);}
+    to {background-color: rgba(255,121,218);}
 }
 .fa-regular:hover{
     cursor: pointer;
@@ -241,7 +238,7 @@ animation-duration: 1s;
     opacity: 1;
     transform: translateY(-50%) scale(1.2);
     animation-name: heart;
-    animation-duration: 5s;
+    animation-duration: 10s;
 }
 
  /***** Footer ******/
@@ -274,7 +271,8 @@ footer a {
         display: flex;
         flex-direction: column;
         padding: 23px;
-        font-size: 14px;
+        gap: 25px;
+    
     }
 
     .explore button{
