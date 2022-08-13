@@ -181,7 +181,7 @@ p{
     display: flex;
     font-weight: 900;
     align-items: flex-end;
-    padding: 1rem;
+    padding: 16px;
 }
 .check{
     display: grid;
@@ -190,7 +190,7 @@ p{
     margin-right: -48px;
     width: 48px;
     border-radius: 0 20px 20px 0;
-    transition: all 0.5s;
+    transition: all 0.6s;
 }
 .menu-item:hover > .check {
     cursor: pointer;
