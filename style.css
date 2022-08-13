@@ -60,6 +60,7 @@ font-size: 24px;
 .explore{
     text-align: center;
     background-color: #f6f6f6;
+    padding-bottom: 20px;
     
 }
 .explore button{
@@ -227,13 +228,13 @@ animation-duration: 2s;
     -webkit-text-fill-color: transparent;
     opacity: 1;
     animation-name: heart;
-    animation-duration: 10s;
+    animation-duration: 20s;
 }
 @keyframes heart{
-from {background-color: rgb(84, 52, 124);
-        animation-delay: 1s;                                    }
-    to {background-color: rgba(255,121,218);
-            animation-delay: 5s;}
+from {background-color: rgba(255,121,218); }
+    to {
+        background-color: rgb(84, 52, 124);
+            animation-delay: 8s;}
 
 }
 .fa-regular:hover{
