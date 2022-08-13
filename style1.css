@@ -137,9 +137,9 @@ h3.title::after {
     overflow: hidden;
     text-overflow: ellipsis;
     justify-content: space-between;
-margin: 6px;
-animation-name: delay;
-animation-duration: 4s;
+    margin: 6px;
+    animation-name: delay;
+    animation-duration: 4s;
 
 }
 h4{
