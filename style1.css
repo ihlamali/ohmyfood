@@ -252,7 +252,26 @@ p{
     animation-name: delay;
     animation-delay: 14s;
 }
-
+.delay-5{
+    animation-name: delay;
+    animation-delay: 18s; 
+}
+.delay-6{
+    animation-name: delay;
+    animation-delay: 20s; 
+}
+.delay-7{
+    animation-name: delay;
+    animation-delay: 22s; 
+}
+.delay-8{
+    animation-name: delay;
+    animation-delay: 24s; 
+}
+.delay-9{
+    animation-name: delay;
+    animation-delay: 26s; 
+}
 
 /* ** Button *****/
 .command{
