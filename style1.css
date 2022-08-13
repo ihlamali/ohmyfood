@@ -118,13 +118,13 @@ h3.title
 {
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 0.5rem;
+    padding-bottom: 8px;
     font-weight: normal;
 }
 h3.title::after {
     content: "";
     width: 48px;
-    height: 0.25rem;
+    height: 4px;
     background-color:#99E2D0 ;
     position: absolute;
     left: 0;
