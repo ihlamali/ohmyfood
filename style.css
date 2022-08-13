@@ -242,12 +242,11 @@ from {background-color: rgb(84, 52, 124);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-   
 }
 
  /***** Footer ******/
 footer{
-    background-color: rgb(47, 47, 47);
+    background-color: rgb(50, 50, 50);
     text-align: center;
     color: white;
     padding: 0 8px;
