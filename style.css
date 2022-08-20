@@ -52,9 +52,10 @@ background-color: #eaeaea;
 text-align: center;
 padding: 8px; 
 gap: 16px;
+font-size: 22px;
 }
 .local i{
-font-size: 24px;
+font-size: 22px;
 }
 /*Explore*/
 .explore{
@@ -87,7 +88,7 @@ ol {
 
 }
 
-li{
+ol li{
     
     margin: 13px;
     position: relative;
@@ -277,6 +278,9 @@ footer a {
         padding: 23px;
         gap: 25px;
     
+    }
+    ol li{
+        margin: 0px;
     }
 
     .explore button{
