@@ -208,8 +208,6 @@ background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0));
 -webkit-background-clip: text;
 background-clip: text;
 -webkit-text-fill-color: transparent;
-animation-name: heart;
-animation-duration: 2s;
 
 }
 .fa-regular{
@@ -220,30 +218,54 @@ animation-duration: 2s;
     -webkit-text-fill-color: transparent;
 
 }
-.fa-heart:hover
+.fas:hover
 {
     cursor: pointer;
-    background: -webkit-linear-gradient(rgba(147,86,220,0.9 ),rgba(255,121,218,0.9));
+   /* */
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 1;
-    animation-name: heart;
-    animation-duration: 20s;
+    animation-name: heart ;
+    animation-duration: 15s;
 }
-@keyframes heart{
-from {background-color: rgba(255,121,218); }
-    to {
-        background-color: rgb(84, 52, 124);
-            animation-delay: 8s;}
-
+   
+@keyframes heart {
+ 0%{background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0)); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;}
+ 25%{background: -webkit-linear-gradient(rgba(147,86,220,0.25 ),rgba(255,121,218,0.25));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+ 50%{background: -webkit-linear-gradient(rgba(147,86,220,0.5 ),rgba(255,121,218,0.5));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+ 75%{background: -webkit-linear-gradient(rgba(147,86,220,0.75 ),rgba(255,121,218,0.75));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+ 100%{background: -webkit-linear-gradient(rgba(147,86,220,1 ),rgba(255,121,218,1)); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;}
+ /*
+ 25%{background-color: rgba(255,121,218,0.3);}
+ 50%{background-color: rgb(182, 25, 137); }
+ 75%{background-color:red}
+ 90%{background-color: rgb(84, 52, 124,1);}
+ 
+*/
 }
 .fa-regular:hover{
     cursor: pointer;
-    background: -webkit-linear-gradient(rgba(0,0,0,0 ),rgba(0,0,0,0));
+    background: -webkit-linear-gradient(rgba(0,0,0,1 ),rgba(0,0,0,1));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 
  /***** Footer ******/
