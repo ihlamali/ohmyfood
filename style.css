@@ -227,7 +227,7 @@ background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 1;
     animation-name: heart ;
-    animation-duration: 15s;
+    animation-duration: 10s;
 }
    
 @keyframes heart {
