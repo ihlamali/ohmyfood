@@ -74,28 +74,41 @@ background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
-.fa-heart:hover
+.fas:hover
 {
     cursor: pointer;
-    background: -webkit-linear-gradient(rgba(147,86,220,0.9 ),rgba(255,121,218,0.9));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation-name: heart;
-    animation-duration: 5s;
-    animation-delay: 10s;
+    animation-duration: 10s;
+
 
 
 }
 @keyframes heart{
 
-    from {
-        animation-duration:2s;
-        background-color: rgba(147,86,220)};
-
-    to {
-        animation-delay: 4s;
-        background-color: rgba(255,121,218);}
+    0%{background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0)); 
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;}
+     25%{background: -webkit-linear-gradient(rgba(147,86,220,0.25 ),rgba(255,121,218,0.25));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; }
+     50%{background: -webkit-linear-gradient(rgba(147,86,220,0.5 ),rgba(255,121,218,0.5));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; }
+     75%{background: -webkit-linear-gradient(rgba(147,86,220,0.75 ),rgba(255,121,218,0.75));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; }
+     100%{background: -webkit-linear-gradient(rgba(147,86,220,1 ),rgba(255,121,218,1)); 
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    
 }
 .fa-regular:hover{
     cursor: pointer;
@@ -103,7 +116,7 @@ background-clip: text;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 0.2;
+
 
 }
 /******menu*******/
@@ -377,11 +390,16 @@ flex-direction: column;
             opacity: 0.2;
         }
     
-    /***
-    @for $i from 0 to 9 {
-.delay-#{$i} {
-    animation-delay:  #{$i/10}s;
+
+        footer{
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+        
+            }
+            footer ul li{
+                text-align: start;
+                margin-left: -20px;
+            }
 }
-}
-    ***/
-}
+
