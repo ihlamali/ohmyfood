@@ -287,7 +287,7 @@ p{
 /* ** Button *****/
 .command{
     text-align: center;
-    margin-top: 38px;
+   padding: 20px;
 
 }
 button{
