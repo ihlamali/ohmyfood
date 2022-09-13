@@ -114,7 +114,7 @@ ol li{
     padding: 20px 35px;
 }
 ol li:hover{
-    transform: scale(0 1.5);
+    transform: scale(0 ,1.5);
 
 }
 ol li i {
