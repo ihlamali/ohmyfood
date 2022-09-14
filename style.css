@@ -113,6 +113,11 @@ ol li{
     box-shadow:0 0 8px rgb(0 0 0 /25%) ;
     padding: 20px 35px;
 }
+<<<<<<< HEAD
+=======
+ol li:hover{
+    transform: scale(0 ,1.5);
+>>>>>>> main
 
 
 ol li i {
