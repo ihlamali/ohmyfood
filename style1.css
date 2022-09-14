@@ -316,6 +316,7 @@ footer{
 footer h2 {
     font-family:Shrikhand ;
     gap: 16px;
+    margin: 1px;
     
 }
 footer ul li {
@@ -400,6 +401,7 @@ flex-direction: column;
             footer ul li{
                 text-align: start;
                 margin-left: -20px;
+                padding: 2px;
             }
 }
 
