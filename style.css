@@ -8,6 +8,7 @@ header{
 }
 body{
     font-family: Roboto,sans-serif;
+    margin: 0px;
 }
 /* Loader*/
 .loader {
@@ -45,17 +46,19 @@ body{
 }
 /*Localisation */
 .local{
-display: flex;
-align-items: center;
-justify-content: center;
-background-color: #eaeaea;
-text-align: center;
-padding: 8px; 
-gap: 16px;
-font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 8px; 
+    gap: 16px;
+    font-size: 20px;
 }
 .local i{
-font-size: 22px;
+
+    font-size: 22px;
+
 }
 /*Explore*/
 .explore{
