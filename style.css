@@ -4,11 +4,13 @@ header{
     box-shadow:0 0 9px rgb(0 0 0 /25%) ;
     padding: 4px;
     position: relative;
+    background-color: white;
 
 }
 body{
     font-family: Roboto,sans-serif;
     margin: 0px;
+    background-color: #eaeaea;
 }
 /* Loader*/
 .loader {
@@ -54,6 +56,7 @@ body{
     padding: 8px; 
     gap: 16px;
     font-size: 20px;
+
 }
 .local i{
 
@@ -84,10 +87,16 @@ body{
 
 
 /* fonctionmment */
+.bg-fonct{
+    background-color: white;
+    padding: 4px;
+
+}
 ol {
     list-style-type: none;
     display: flex;
     gap: 45px;
+    width: 90%;
 
 }
 
@@ -96,6 +105,8 @@ ol li{
     margin: 13px;
     position: relative;
     white-space: nowrap; 
+    font-weight: 400;
+    
 }
 .liste{
     color: white;
@@ -120,7 +131,7 @@ ol li{
 ol li i {
     margin-right: 16px ;
 }
-ol:hover > li i{
+li:hover > i{
     color: #9356dc;
 
 }
@@ -225,28 +236,45 @@ background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 1;
-    animation-name: heart ;
-    animation-duration: 8s;
+    animation: heart 5s  ;
+    transition: rgba(147,86,220,1 )-rgba(255,121,218,1) 2s;
+
 }
+/*
+.fas:hover::after {
+
+cursor: pointer;
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+opacity: 1;
+background: -webkit-linear-gradient(rgba(147,86,220,1 ),rgba(255,121,218,1)); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}*/
 
 @keyframes heart {
-0%{background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0)); 
+    0%{background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0)); 
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;}
-25%{background: -webkit-linear-gradient(rgba(147,86,220,0.25 ),rgba(255,121,218,0.25));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; }
-50%{background: -webkit-linear-gradient(rgba(147,86,220,0.5 ),rgba(255,121,218,0.5));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; }
-75%{background: -webkit-linear-gradient(rgba(147,86,220,0.75 ),rgba(255,121,218,0.75));
+    -webkit-text-fill-color: transparent;
+    
+    
+    }
+    25%{background: -webkit-linear-gradient(rgba(147,86,220,0.25 ),rgba(255,121,218,0.25));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent; }
-100%{background: -webkit-linear-gradient(rgba(147,86,220,1 ),rgba(255,121,218,1)); 
+    50%{background: -webkit-linear-gradient(rgba(147,86,220,0.5 ),rgba(255,121,218,0.5));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+    75%{background: -webkit-linear-gradient(rgba(147,86,220,0.75 ),rgba(255,121,218,0.75));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+    100%{background: -webkit-linear-gradient(rgba(147,86,220,1 ),rgba(255,121,218,1)); 
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;}
@@ -289,16 +317,22 @@ footer a {
 @media screen and  (min-width:768px) and (max-width: 1000px ) 
 {
 
+
 ol{
     gap: 6px;
     padding: 4px;
-
- }
-
+    width: 70%;
 
 }
-@media screen and (max-width: 768px)
- {
+ol li{
+    
+    padding: 15px ;
+}
+
+}
+@media screen and (min-width: 320px) and (max-width:760px)
+{
+
     ol
     {
         display: flex;
