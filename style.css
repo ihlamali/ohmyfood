@@ -149,6 +149,7 @@ main{
     gap: 16px;
     justify-content: center;
     margin: 4px;
+    padding: 20px;
 }
 main h2{
     width: 100%;
@@ -197,13 +198,15 @@ top: 16px;
 }
 h3{
     padding-left: 8px;
+    margin: 4px;
 }
 p{
     padding-left: 8px;
-    padding-bottom: 2px;
+    margin: 4px;
+
 }
 .container{
-    padding-left: 2px;
+    padding-left: 0px;
     gap: 16px;
     position: relative;
 }
@@ -212,13 +215,17 @@ float:inline-end;
 padding-left: 80px;
 font-size: 32px;
 position: absolute;
-top:72%;
+top:80%;
 right: 32px;
+width: 32px;
+background-position: 50% 35%;
 
 background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0));
 -webkit-background-clip: text;
 background-clip: text;
 -webkit-text-fill-color: transparent;
+
+
 
 }
 .fa-regular{
@@ -236,32 +243,19 @@ background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 1;
-    animation: heart 5s  ;
-    transition: rgba(147,86,220,1 )-rgba(255,121,218,1) 2s;
+    animation: heart 5s  ease-in-out  ;
+    animation-fill-mode: forwards;
+    
 
 }
-/*
-.fas:hover::after {
 
-cursor: pointer;
--webkit-background-clip: text;
-background-clip: text;
--webkit-text-fill-color: transparent;
-opacity: 1;
-background: -webkit-linear-gradient(rgba(147,86,220,1 ),rgba(255,121,218,1)); 
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}*/
 
 @keyframes heart {
     0%{background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0)); 
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
-    
-    }
+    transform:translateY(1)}
     25%{background: -webkit-linear-gradient(rgba(147,86,220,0.25 ),rgba(255,121,218,0.25));
     -webkit-background-clip: text;
     background-clip: text;
@@ -269,15 +263,18 @@ background: -webkit-linear-gradient(rgba(147,86,220,1 ),rgba(255,121,218,1));
     50%{background: -webkit-linear-gradient(rgba(147,86,220,0.5 ),rgba(255,121,218,0.5));
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent;
+     }
     75%{background: -webkit-linear-gradient(rgba(147,86,220,0.75 ),rgba(255,121,218,0.75));
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent; 
+    transform:translateY(0);}
     100%{background: -webkit-linear-gradient(rgba(147,86,220,1 ),rgba(255,121,218,1)); 
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;}
+    -webkit-text-fill-color: transparent;
+}
 
 }
 .fa-regular:hover{
@@ -326,7 +323,7 @@ ol{
 }
 ol li{
     
-    padding: 15px ;
+    padding: 15px;
 }
 
 }
@@ -355,7 +352,7 @@ ol li{
     }
     main{
         margin: 0px;
-        margin-bottom: 33px;
+       
     }
     .card{
         width: 400px;
@@ -367,11 +364,17 @@ ol li{
     text-align: start;
     justify-content:space-around;
     
+    }
 
+    footer h2{
+        font-size: 18px;
+        font-weight: 300;
+        padding-left: 26px;
+        margin-top: 24px;
     }
     footer ul li{
         text-align: start;
         margin-left: -20px;
-        padding: 3px;
+        padding: 5px;
     }
 }
