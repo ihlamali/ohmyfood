@@ -56,16 +56,16 @@ h3{
 }
 
 .fa-heart {
-float:inline-end;
-padding-left: 15px;
-font-size: 29px;
-position: absolute;
-top: 8px;
-right: 26px;
-background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0));
--webkit-background-clip: text;
-background-clip: text;
--webkit-text-fill-color: transparent;
+    float:inline-end;
+    padding-left: 15px;
+    font-size: 29px;
+    position: absolute;
+    top: 8px;
+    right: 26px;
+    background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 .fa-regular{
@@ -124,10 +124,10 @@ background-clip: text;
 /******menu*******/
 .grid {
 
-display:flex ;
-flex-direction: row;
-justify-content: space-between;
-margin: 2px;
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2px;
 
 }
 h3.title
@@ -152,12 +152,19 @@ h3.title::after {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
+    
     text-overflow: ellipsis;
     justify-content: space-between;
     margin: 14px;
     animation-name: delay;
     animation-duration: 4s;
 
+}
+.menu-description
+
+{
+    width: 70%;
+    padding: 10px;
 }
 h4{
     padding: 0px;
@@ -168,30 +175,19 @@ h4{
 }
 p{
     margin: 1px;
-    width: 70%; 
+    width: 10%; 
     white-space: nowrap; 
     font-size: 15px;
     text-overflow: ellipsis;
 
 }
-.menu-description
-
-{
-    width: 60%;
-    padding: 10px;
 
 
-}
-.menu-item:hover >.menu-description{
-    width: 50%;
+
+
+.menu-item:hover > .menu-description p  {
+    width: 10%;
     text-overflow: ellipsis;
-    white-space: nowrap; 
-
-}
-.menu-description p:hover{
-    width: 50%;
-    text-overflow: ellipsis;
-    
 }
 .menu-item{
     display: flex;
@@ -200,24 +196,26 @@ p{
 }
 
 
+
 .price {
     margin-left: auto;
     display: flex;
     font-weight: 900;
     align-items: flex-end;
     padding: 16px;
+    width: 10%;
 }
 .check{
     display: grid;
     place-items:center;
     background-color: #99E2D0;
     margin-right: -48px;
-    width: 48px;
     border-radius: 0 10px 10px 0;
     transition: all 0.6s;
 }
 .menu-item:hover > .check {
     cursor: pointer;
+    width: 15%;
     margin-right: -5px;
     overflow: hidden;
 }
@@ -226,7 +224,7 @@ p{
     display: grid;
     place-items:center;
     background-color: white;
-    width: 26px;
+    width: 25px;;
     height: 27px;
     border-radius: 50%;
     color: #99E2D0;
@@ -302,14 +300,14 @@ p{
     padding: 20px;
 
 }
-button{
+.command button{
     color: white;
     background-image:linear-gradient(to top,rgb(147,86,220,0.9 ),rgb(255,121,218,0.9) ) ;
     border: none;
     border-radius:36px;
     padding: 16px 32px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     box-shadow:0 0 8px rgb(0 0 0 /25%) ;
 
 }
