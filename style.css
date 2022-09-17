@@ -176,16 +176,16 @@ main article a {
 
 }
 .new::after{
-content: "Nouveau";
-position: absolute;
-height: 32px;
-width: 80px;
-background-color: #99E2D0;
-color:  #3a9981;
-display: grid;
-place-items:center;
-right: 16px;
-top: 16px;
+    content: "Nouveau";
+    position: absolute;
+    height: 32px;
+    width: 80px;
+    background-color: #99E2D0;
+    color:  #3a9981;
+    display: grid;
+    place-items:center;
+    right: 16px;
+    top: 16px;
 }
 .card{
     box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
@@ -211,14 +211,14 @@ p{
     position: relative;
 }
 .fa-heart {
-float:inline-end;
-padding-left: 80px;
-font-size: 32px;
-position: absolute;
-top:80%;
-right: 32px;
-width: 32px;
-background-position: 50% 35%;
+    float:inline-end;
+    padding-left: 80px;
+    font-size: 32px;
+    position: absolute;
+    top:80%;
+    right: 32px;
+    width: 32px;
+    background-position: 50% 35%;
 
 background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0));
 -webkit-background-clip: text;
@@ -264,7 +264,7 @@ background-clip: text;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-     }
+    }
     75%{background: -webkit-linear-gradient(rgba(147,86,220,0.75 ),rgba(255,121,218,0.75));
     -webkit-background-clip: text;
     background-clip: text;
