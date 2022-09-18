@@ -164,7 +164,7 @@ h3.title::after {
 .menu-description
 
 {
-    width: 70%;
+    width: 60%;
     padding: 10px;
 }
 h4{
@@ -176,18 +176,19 @@ h4{
 }
 p{
     margin: 1px;
-    width: 10%; 
+    width: 180px; 
     white-space: nowrap; 
     font-size: 15px;
     text-overflow: ellipsis;
+    overflow: hidden;
 
 }
 
 
 
 
-.menu-item:hover > .menu-description p  {
-    width: 10%;
+.menu-item:hover > .menu-description {
+    width: 50%;
     text-overflow: ellipsis;
 }
 .menu-item{
@@ -204,7 +205,7 @@ p{
     font-weight: 900;
     align-items: flex-end;
     padding: 16px;
-    width: 10%;
+    width: 15%;
 }
 .check{
     display: grid;
@@ -346,7 +347,15 @@ footer a {
 {
     main.grid{
 
-flex-direction: column;
+    flex-direction: column;
+    }
+    p{
+        margin: 1px;
+        width: 140px; 
+        white-space: nowrap; 
+        font-size: 15px;
+        text-overflow: ellipsis;
+    
     }
     .resto-menu h2{
         width: 80%;
