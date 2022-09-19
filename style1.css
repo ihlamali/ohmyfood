@@ -35,12 +35,12 @@ body{
     object-position: center ;
 }
 section h2{
-    padding: 5px;
+    padding: 10px;
 }
 .resto-menu{
     position: relative;
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 32px 32px 0 0;
     margin-top: -47px;
     background-color: #f6f6f6;
 }
@@ -50,6 +50,7 @@ h3{
 .resto-menu h2{
     width: 80%;
     font-family: Shrikhand,sans-serif ;
+    padding-top: 23px;
 }
 .resto-menu i{
     width: 10%;
@@ -60,7 +61,7 @@ h3{
     padding-left: 15px;
     font-size: 29px;
     position: absolute;
-    top: 8px;
+    top: 25px;
     right: 26px;
     background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0));
     -webkit-background-clip: text;
@@ -119,6 +120,7 @@ h3{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 
 
 }
@@ -162,19 +164,18 @@ h3.title::after {
 
 }
 .menu-description
-
 {
-    width: 60%;
+    width: 70%;
     padding: 10px;
 }
 h4{
     padding: 0px;
     margin: 0px;
-    font-size: 20px;
+    font-size: 18px;
     white-space: nowrap; 
     
 }
-p{
+.menu-description p{
     margin: 1px;
     width: 180px; 
     white-space: nowrap; 
@@ -183,12 +184,16 @@ p{
     overflow: hidden;
 
 }
-
+.menu-description:hover > p{
+    width: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 
 
 
 .menu-item:hover > .menu-description {
-    width: 50%;
+    width: 60%;
     text-overflow: ellipsis;
 }
 .menu-item{
@@ -205,7 +210,7 @@ p{
     font-weight: 900;
     align-items: flex-end;
     padding: 16px;
-    width: 15%;
+    width: 20%;
 }
 .check{
     display: grid;
@@ -217,7 +222,7 @@ p{
 }
 .menu-item:hover > .check {
     cursor: pointer;
-    width: 15%;
+    width: 16%;
     margin-right: -5px;
     overflow: hidden;
 }
@@ -356,6 +361,11 @@ footer a {
         font-size: 15px;
         text-overflow: ellipsis;
     
+    }
+    .menu-description:hover > p{
+        width: 130px;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     .resto-menu h2{
         width: 80%;

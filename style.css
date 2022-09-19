@@ -254,27 +254,27 @@ background-clip: text;
     0%{background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0)); 
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform:translateY(1)}
+    -webkit-text-fill-color: transparent;}
+    
     25%{background: -webkit-linear-gradient(rgba(147,86,220,0.25 ),rgba(255,121,218,0.25));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent; }
+
     50%{background: -webkit-linear-gradient(rgba(147,86,220,0.5 ),rgba(255,121,218,0.5));
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
+    -webkit-text-fill-color: transparent;}
+
     75%{background: -webkit-linear-gradient(rgba(147,86,220,0.75 ),rgba(255,121,218,0.75));
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    transform:translateY(0);}
+    -webkit-text-fill-color: transparent; }
+
     100%{background: -webkit-linear-gradient(rgba(147,86,220,1 ),rgba(255,121,218,1)); 
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    -webkit-text-fill-color: transparent;}
 
 }
 .fa-regular:hover{
