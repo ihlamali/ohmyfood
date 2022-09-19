@@ -43,7 +43,9 @@ body{
 @keyframes disappear {
     to{
         transform: scale(0);
+        
     }
+    
     
 }
 /*Localisation */
@@ -220,10 +222,10 @@ p{
     width: 32px;
     background-position: 50% 35%;
 
-background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0));
--webkit-background-clip: text;
-background-clip: text;
--webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(rgba(147,86,220,0 ),rgba(255,121,218,0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 
 
